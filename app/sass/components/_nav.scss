@@ -1,0 +1,82 @@
+.nav {
+    padding: 3.5rem 0;
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__logo-link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    &__logo-icon {
+        display: inline-block;
+        margin-right: 1rem;
+        color: $red;
+        font-size: 5.7rem;
+    }
+
+    &__logo-name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        color: $dark-grey-2;
+    }
+
+    &__name {
+        font-family: $bold;
+        font-size: 3.7rem;
+        line-height: 1;
+    }
+
+    &__description {
+        font-family: $regular;
+        font-size: 1.5rem;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-left: auto;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+
+    &__link {
+        @include custom-link-style($dark-grey-2, $red);
+        font-family: $bold;
+        font-size: 1.5rem;
+        line-height: 1;
+        padding-left: 1.5rem;
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+
+        &:hover::before {
+            background-color: $red;
+        }
+
+        &::before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: $dark-grey-2;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+        }
+    }
+}

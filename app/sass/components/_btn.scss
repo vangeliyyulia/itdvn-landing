@@ -1,0 +1,21 @@
+.btn {
+
+    &--header {
+        @include button-general-style($red);
+        margin-left: 1.5rem;
+        color: #fff;
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+        transition: background-color $slow-transition;
+    }
+
+    &--hero {
+        @include button-general-style($yellow);
+        color: #fff;
+        font-size: 2.3rem;
+        text-transform: uppercase;
+        padding: 2rem 3rem;
+        transition: background-color $slow-transition;
+        margin-top: 2.5rem;
+    }
+}

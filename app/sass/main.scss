@@ -4,3 +4,17 @@
 @import "node_modules/@fortawesome/fontawesome-free/scss/solid";
 
 @import "node_modules/normalize.css/normalize";
+
+@import "base/base";
+@import "base/fonts";
+@import "base/variables";
+@import "base/mixins";
+
+@import "sections/hero";
+@import "sections/aboutus";
+@import "sections/approach";
+
+@import "components/contacts";
+@import "components/nav";
+@import "components/btn";
+@import "components/section-heading";
