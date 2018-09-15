@@ -1,0 +1,49 @@
+.btn {
+
+    &--header {
+        @include button-general-style($red);
+        margin-left: 1.5rem;
+        color: #fff;
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+        transition: background-color $slow-transition;
+    }
+
+    &--hero {
+        @include button-general-style($yellow);
+        color: #fff;
+        font-size: 2.3rem;
+        text-transform: uppercase;
+        padding: 2rem 3rem;
+        transition: background-color $slow-transition;
+        margin-top: 2.5rem;
+    }
+
+    &--form {
+        @include button-general-style($red);
+        border: none;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+        transition: background-color $slow-transition;
+    }
+
+    &--footer {
+        border: 2px solid #515151;
+        color: #fff;
+        background-color: transparent;
+        font-family: $bold;
+        font-size: 1.7rem;
+        padding: 1rem 2rem;
+        transition: border-color $slow-transition;
+        display: inline-block;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+
+        &:hover {
+            border-color: $red;
+        }
+    }
+}

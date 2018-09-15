@@ -1,0 +1,49 @@
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $dark-grey-2;
+
+    &--work,
+    &--cta {
+        color: #fff;
+    }
+
+    &__main {
+        font-family: $bold;
+        font-size: 3.6rem;
+        margin-bottom: 1rem;
+    }
+
+    &__description {
+        font-family: $light;
+        font-size: 2rem;
+        padding-bottom: 1.6rem;
+        position: relative;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            background-color: $dark-grey-2;
+            width: 4.7rem;
+            height: .5rem;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2.3rem;
+        }
+
+        &--work {
+            &::after {
+                background-color: #fff;
+            }
+        }
+
+        &--cta {
+            &::after {
+                display: none;
+            }
+        }
+    }
+}

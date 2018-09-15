@@ -1,0 +1,34 @@
+.hero {
+    min-height: 58.8rem;
+    background: #828282 url(../img/hero-bg.jpg);
+    background-size: cover;
+    background-position: center top;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 17rem;
+        color: #fff;
+    }
+
+    &__heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &--sm {
+            font-family: $bold;
+            font-size: 5.7rem;
+            line-height: 1.5;
+        }
+
+        &--bg {
+            font-family: $light;
+            font-size: 3.6rem;
+        }
+    }
+}

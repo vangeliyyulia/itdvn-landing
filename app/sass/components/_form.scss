@@ -1,0 +1,113 @@
+.form-container {
+    display: none;
+    width: 66%;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 3rem;
+    position: relative;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+        width: 0; 
+        height: 0; 
+        border-left: 5rem solid transparent;
+        border-right: 5rem solid transparent;        
+        border-bottom: 5rem solid #fff;
+    }
+
+    @include respond(tab-port) {
+        width: 90%;
+    }
+}
+
+.form {
+    width: 100%;
+    padding: 4rem 6rem 6rem;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    position: relative;
+
+    @include respond(phone) {
+        padding: 2rem 1rem;
+    }
+
+    &__group {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
+    }
+    
+    &__header {
+        max-width: 57rem;
+        color: $light-grey-2;
+        font-family: $light;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    &__input {
+        width: 100%;
+        max-width: 44.5rem;
+        padding: 1rem 2rem;
+        border-radius: 2px;
+        color: $light-grey-2;
+        font-family: $light;
+        font-size: 1.4rem;
+        line-height: 1;
+        border: 1px solid #d8d8d8;
+
+        &:not(:last-child) {
+            margin-bottom: .8rem;
+        }
+
+        &:last-child {
+            margin-bottom: 3.5rem;
+        }
+    }
+
+    &__close {
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        background-color: $red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: $light;
+        font-size: 3.2rem;
+        cursor: pointer;
+        transition: background-color $slow-transition;
+
+        position: absolute;
+        top: -2rem;
+        right: -1rem;
+
+        &:hover {
+            background-color: lighten($red, 10%);
+        }
+    }
+}
+
+.pop-up {
+    animation: bouncy-slide-down .5s ease-in-out;
+}

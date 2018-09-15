@@ -1,0 +1,31 @@
+@font-face {
+	font-family: 'Georgia Bold';
+	src: local('georgia-bold'),
+		   url('../fonts/georgia-bold.woff') format('woff');
+	  font-weight: bold;
+	  font-style: normal;
+}
+
+@font-face {
+	font-family: 'Helvetica Neue Bold';
+	src: local('helvetica-neue-bold'),
+		   url('../fonts/helvetica-neue-bold.woff') format('woff');
+	  font-weight: bold;
+	  font-style: normal;
+}
+
+@font-face {
+	font-family: 'Helvetica Neue Light';
+	src: local('helvetica-neue-light'),
+		   url('../fonts/helvetica-neue-light.woff') format('woff');
+	  font-weight: thin;
+	  font-style: normal;
+}
+
+@font-face {
+	font-family: 'Helvetica Neue Regular';
+	src: local('helvetica-neue-regular'),
+		   url('../fonts/helvetica-neue-regular.woff') format('woff');
+	  font-weight: thin;
+	  font-style: normal;
+}

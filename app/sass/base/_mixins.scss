@@ -1,0 +1,46 @@
+@mixin custom-link-style($color, $link-hover) {
+    color: $color;
+    text-decoration: none;
+    transition: color $slow-transition;
+  
+    &:hover,
+    &:focus {
+      color: $link-hover;
+    }
+}
+
+@mixin button-general-style($background-color) {
+    display: inline-block;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: $bold;
+    text-decoration: none;
+    background-color: $background-color;
+
+    &:hover {
+      background-color: lighten($background-color, 10%);
+    }
+  
+  &:focus {
+    outline: none;
+  }
+}
+
+@mixin respond ($breakpoint) {
+  @if $breakpoint == phone {
+      @media only screen and (max-width: 37.5em) { @content };
+  }
+
+  @if $breakpoint == tab-land {
+      @media only screen and  (max-width: 75em) { @content };
+  }
+
+  @if $breakpoint == tab-port {
+      @media only screen and  (max-width: 56.25em) { @content };
+  }
+
+  @if $breakpoint == big-desktop {
+      @media only screen and  (min-width: 112.5em) { @content };
+  }
+}

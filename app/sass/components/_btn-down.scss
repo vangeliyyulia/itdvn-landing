@@ -1,0 +1,24 @@
+.btn-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-down {
+    cursor: pointer;
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 3px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-bottom: 2rem;
+
+    & .fas {
+        color: #fff;
+        font-size: 3rem;
+    }
+}
