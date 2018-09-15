@@ -227,12 +227,12 @@
 					<p class="heading__description heading__description--cta">Enter your details below</p>
 				</div>
 				<div class="btn-down">
-					<a href="form.html" target="_blank" class="arrow-down">
+					<button class="arrow-down" onclick="openForm()">
 						<i class="fas fa-angle-down"></i>
-					</a>
+					</button>
 				</div>
-				<div class="form-container">
-					<form method="POST" action="#" class="form">
+				<div class="form-container pop-up" id="form-container">
+					<form action="#" class="form">
 						<h4 class="form__header">
 							Sit down with our experts to receive a free customized marketing plan for your business + Learn How To Use Google and Facebook to get 5000% ROI or more
 						</h4>
@@ -242,7 +242,7 @@
 							<input type="email" placeholder="Company Name" class="form__input">
 						</div>
 						<button type="submit" class="btn btn--form">Submit Now</button>
-						<button class="form__close">X</button>
+						<button type="button" class="form__close" onclick="closeForm()">X</button>
 					</form>
 				</div>
 			</div>
@@ -291,5 +291,7 @@
 			Cssauthor.com © 2014 All Rights Reserved
 		</div>
 	</footer>
+
+	<script src="js/scripts.min.js"></script>
 </body>
 </html>
