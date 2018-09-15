@@ -2,11 +2,21 @@
     background-color: $red;
     padding: 7rem 0;
 
+    @include respond(tab-port) {
+        padding: 6rem 4rem;
+    }
+
     &__list {
         list-style: none;
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         margin-top: 4rem;
+
+        @include respond(phone) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__item {
@@ -17,6 +27,18 @@
 
         &:nth-child(2n) {
             flex-direction: column-reverse;
+
+            @include respond(phone) {
+                flex-direction: column;
+            }
+        }
+
+        @include respond(tab-port) {
+            width: 50%;
+        }
+
+        @include respond(phone) {
+            width: 100%;
         }
     }
 
