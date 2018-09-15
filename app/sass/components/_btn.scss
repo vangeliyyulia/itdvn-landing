@@ -18,4 +18,14 @@
         transition: background-color $slow-transition;
         margin-top: 2.5rem;
     }
+
+    &--form {
+        @include button-general-style($red);
+        border: none;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+        transition: background-color $slow-transition;
+    }
 }
